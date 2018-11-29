@@ -1,0 +1,16 @@
+<h1>Test API Contacts</h1>
+
+<% @contacts.map do |value| %>
+<%#= @contacts %>
+<%#=  key %>
+<% @valeurs =  value %>
+<%= @result = @valeurs[1].map do |val| %>
+<%= [val["addedAt"], val["vid"]] %>
+  <% end %>
+  <%# valeurs.each do |key, valu| %>
+  <%#= key %>
+<% end %>
+
+
+
+ <!--  furniture_values = (furniture.map {|furn| [furn["name"], furn["color"], furn["size"], furn["date_created"], furn["condition"]]}) -->
