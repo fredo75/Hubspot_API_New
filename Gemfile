@@ -21,6 +21,14 @@ gem 'better_errors'
 gem 'binding_of_caller'
 gem 'foundation-rails'
 gem 'autoprefixer-rails'
+gem 'turbolinks', '~> 5.2.0'
+gem 'jquery-turbolinks'
+gem 'jquery-rails', '~> 4.1', '>= 4.1.1'
+gem 'sprockets', '~> 3.5', '>= 3.5.2'
+gem 'sprockets-es6', '~> 0.6.0'
+gem 'rails_layout'
+gem 'simple_form'
+
 
 group :development do
   gem 'web-console', '>= 3.3.0'

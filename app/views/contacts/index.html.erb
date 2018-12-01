@@ -4,12 +4,12 @@
 
 
 <%# @contacts.each do |contact| %>
-  <ul>
+<!--   <ul>
     <li><%#= contact.firstname %></li>
     <li><%#= contact.lastname %></li>
     <li><%#= contact.email %></li>
     <li><%#= contact.company %></li>
-  </ul>
+  </ul> -->
 <%# end %>
 
 
@@ -51,11 +51,63 @@
 <p>@contacthub</p>
 
 <%#= @phantombuster_callback_parse_json.each do |lead| %>
-<ul>
+<!-- <ul>
   <li><%#= lead["fullName"] %></li>
   <li><%#= lead["headline"] %></li>
-</ul>
+</ul> -->
 <%# end %>
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation Starter Template</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <!-- Compressed CSS -->
+
+
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "/assets/modernizr" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+
+
+
+      <div class="class container">
+<form>
+  <div class="row">
+    <div class="small-5">
+      <label for="username">Username
+        <input type="text" name="username" id="username">
+      </label>
+    </div>
+
+    <div class="small-5">
+      <label for="password">Password
+        <input type="password" name="password" id="password">
+      </label>
+    </div>
+  </div>
+
+  <input type="submit" value="Login">
+  <input type="button" value="Cancel">
+
+</form>
+      </div>
+
+
+  <!--   <script src="/assets/vendor/jquery.js"></script>
+    <script src="/assets/vendor/what-input.js"></script>
+    <script src="/assets/vendor/foundation.min.js"></script> -->
+    <script>
+      $(document).foundation();
+    </script>
+<%= javascript_include_tag "application" %>
+  </body>
+</html>
 
 
 
