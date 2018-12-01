@@ -1,14 +1,74 @@
 <h1>Test API Contacts</h1>
-<% @result = [] %>
-<% @contacts["contacts"].each do |key, value| %>
-<%#= @contacts %>
-<%  key.each do|a, b| %>
-<% @result << b %>
-  <% end %>
+
+<%#= @contactshub %>
+
+
+<%# @contacts.each do |contact| %>
+  <ul>
+    <li><%#= contact.firstname %></li>
+    <li><%#= contact.lastname %></li>
+    <li><%#= contact.email %></li>
+    <li><%#= contact.company %></li>
+  </ul>
+<%# end %>
+
+
+<!--
+  ##################################################################
+      ##################### PHANTOM BUSTER #############################
+            ################################################################## -->
+
+
+
+
+
+ <%# @phantombuster_callback.each do |key, value| %>
+
+ <!--  <ul>
+    <li><%#= key["agents"] %></li>
+    <li><%#= value %></li>
+    <li><%#= contact.email %></li>
+    <li><%#= contact.company %></li>
+  </ul> -->
+<%# end %>
+
+
+
+ <%# @phantombuster_callback["agents"].each do |key, value| %>
+
+<!--   <ul>
+    <li><%#= key %></li>
+    <li><%#= value %></li>
+    <li><%#= contact.email %></li>
+    <li><%#= contact.company %></li>
+  </ul>
+<%# end %> -->
+
+<%#=  @phantombuster_callback_parse_json  %>
+
+<%= @for_huspot %>
+
+<p>@contacthub</p>
+
+<%#= @phantombuster_callback_parse_json.each do |lead| %>
+<ul>
+  <li><%#= lead["fullName"] %></li>
+  <li><%#= lead["headline"] %></li>
+</ul>
+<%# end %>
+
+
+
+
+<%# @result = [] %>
+<%# @contacts["contacts"].each do |key, value| %>
+<%#  key.each do|a, b| %>
+<%# @result << b %>
+  <%# end %>
   <%# valeurs.each do |key, valu| %>
   <%#= key %>
-<% end %>
-<%= @result[8] %>
+<%# end %>
+<%#= @result[8] %>
 
 
  <!--  furniture_values = (furniture.map {|furn| [furn["name"], furn["color"], furn["size"], furn["date_created"], furn["condition"]]}) -->

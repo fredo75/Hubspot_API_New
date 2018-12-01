@@ -1,0 +1,14 @@
+<%= form_for @contact do |f| %>
+<%= f.label :firstname, "Enteer the name" %>
+<%= f.text_field :firstname %>
+
+<%= f.label :lastname, "Enter your lastname"  %>
+<%= f.text_field :lastname%>
+
+<%= f.label :email, "email" %>
+<%= f.text_field :email %>
+
+<%= f.label :company, "your company" %>
+<%= f.text_field :company %>
+<%= f.submit %>
+<% end %>

@@ -76,6 +76,7 @@ GEM
     ffi (1.9.25)
     font-awesome-sass (5.0.13)
       sassc (>= 1.11)
+    foundation-rails (6.5.1.0)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     http-cookie (1.0.3)
@@ -223,6 +224,7 @@ DEPENDENCIES
   dotenv-rails
   faker
   font-awesome-sass (~> 5.0.9)
+  foundation-rails
   jbuilder (~> 2.0)
   listen (~> 3.0.5)
   pg (~> 0.21)

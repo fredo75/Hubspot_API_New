@@ -1,0 +1,50 @@
+
+<h1>New Contact</h1>
+
+<div class="form-group container">
+  <label for="exampleInputFile">File input</label>
+  <input type="file" id="exampleInputFile">
+  <p class="help-block">Example block-level help text here.</p>
+</div>
+
+
+
+
+
+
+
+<div class="class container">
+  <div class="container">
+    <%= form_for @contact do |f| %>
+    <%= f.label :firstname, "Firstname" %>
+    <%= f.text_field :firstname, class: "form-control" %>
+
+    <%= f.label :lastname, "Lastname"  %>
+    <%= f.text_field :lastname, class: "form-control"%>
+
+    <%= f.label :email, "email" %>
+    <%= f.text_field :email, class: "form-control" %>
+
+    <%= f.label :company, "Your company" %>
+    <%= f.text_field :company, class: "form-control" %>
+    <%= f.submit class:"btn btn-primary btn-lg active" %>
+    <% end %>
+  </div>
+</div>
+
+
+
+<!--
+  ##################################################################
+      ##################### PHANTOM BUSTER #############################
+            ################################################################## -->
+<h1>Phatom buster</h1>
+<a  class= "btn btn-success boutons" href="https://phantombuster.com/api/v1/agent/31385/launch?&key=PuzLoIgb0mCaokfWEc51aRpqQvm1nuab" >Go</a>
+<a  class= "btn btn-warning boutons" href="https://phantombuster.com/api/v1/agent/31385/abort?&key=PuzLoIgb0mCaokfWEc51aRpqQvm1nuab" >Stop</a>
+
+<%= @phantombuster_callback %>
+
+<%=  @contactshub %>
+<p><%= link_to "back", contacts_path, class: "btn btn-primary boutons"  %></p>
+
+

@@ -19,6 +19,8 @@ gem 'simple_hubspot'
 gem 'faker'
 gem 'better_errors'
 gem 'binding_of_caller'
+gem 'foundation-rails'
+gem 'autoprefixer-rails'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
